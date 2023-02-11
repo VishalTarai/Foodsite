@@ -1,0 +1,229 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar::before{
+    content: ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+/* navigation bar: logo and image */
+#logo{
+    margin: 10px 35px;
+
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin: 3px 6px;
+
+
+}
+/* navigation bar : list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:blanchedalmond;
+    display: block;
+    padding: 3px 13px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+    
+    
+    
+}
+/* homesection */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 203px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') ;
+    height: 1200px;
+    width: 1800px;
+    z-index: -1;
+    opacity: 1;
+    
+}
+#home h1{
+    text-align: center;
+    color:blanchedalmond;
+}
+#home p{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+}
+/* clients section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    position: absolute;
+    content: "";
+    background: url('../bo.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* contact section */
+
+#contact{
+    position: relative;
+    opacity: 0.7;
+    background: url('../pizza.jpg');
+
+}
+#cotact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+
+
+}
+#contact-box, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+}
+footer{
+    background: black;
+    color: blanchedalmond;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    color:#407d8e;
+}
+.h-secondary{
+    font-size: 1.0rem;
+    padding: 13px;
+    
+    
+}
+/* services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid white;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: transparent;
+    backdrop-filter:blur(5px);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .services-container{
+    color: blanchedalmond;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+
+
+}
+.services-container img{
+    width: 100px;
+    height: 100px;
+} */
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    /* background-color: rgb(161, 174, 187); */
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: blanchedalmond;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.center{
+    text-align: center;
+}
+/* service section */
